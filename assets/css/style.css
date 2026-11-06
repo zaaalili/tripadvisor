@@ -32,6 +32,18 @@ h3 {
   margin-bottom: 20px;
 }
 
+h4 {
+  font-size: 24px;
+  font-family: "TS-Med", sans-serif;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 18px;
+  font-family: "TS-Med", sans-serif;
+  /* margin-bottom: 20px; */
+}
+
 /* ---------------------------------------------------------------------------------------- */
 /* ---------------------------------------- HEADER ---------------------------------------- */
 /* ---------------------------------------------------------------------------------------- */
@@ -203,36 +215,37 @@ h1 span {
 /* ----------------------------------------- DESCRIPTION ----------------------------------------- */
 /* ---------------------------------------------------------------------------------------- */
 
-.description {
+#description {
   display: flex;
   margin-bottom: 80px;
 }
 
-.description .col-1 {
+#description .col-1 {
   width: 60%;
 }
 
-.description .col-1 p {
+#description .col-1 p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   color: #333;
 }
 
-.description .col-2 {
+#description .col-2 {
   margin-left: 120px;
+  width: calc(50% - 120px);
 }
 
-.description .col-2 div:first-child {
+#description .col-2 div:first-child {
   background-color: #fb5d5d;
   padding: 32px;
   border-radius: 15px 15px 0px 0px;
 }
 
-.description .col-2 div:first-child p {
+#description .col-2 div:first-child p {
   margin-bottom: 24px;
 }
 
-.description .col-2 div:first-child button {
+#description .col-2 div:first-child button {
   padding: 10px;
   background-color: black;
   border-radius: 15px;
@@ -245,14 +258,143 @@ h1 span {
   cursor: pointer;
 }
 
-.description .col-2 div:first-child button:hover {
+#description .col-2 div:first-child button:hover {
   background-color: #4a1516;
 }
 
-.col-2 img {
+#description .col-2 img {
   height: 190px;
   object-fit: cover;
   border-radius: 0 0 15px 15px;
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------- SECTIONS ---------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+
+#unmissable .carousel-section {
+  display: flex;
+  gap: 20px;
+}
+
+#unmissable .carousel-section .col-1 p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+
+#unmissable .carousel-section a {
+  color: #333;
+}
+
+#unmissable .col-1 {
+  flex: 1;
+}
+
+#unmissable .col-2 {
+  display: flex;
+  flex: 3;
+  overflow: scroll;
+  gap: 15px;
+}
+
+.carousel-section .col-2::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-section .col-2 article {
+  width: calc(100% / 3 - 10px);
+  flex-shrink: 0;
+  padding-bottom: 20px;
+}
+
+.col-2 article img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.carousel-picture {
+  position: relative;
+}
+
+.circle-heart {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  font-size: 18px;
+}
+
+.carousel-section .col-2 .owl {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .owl img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  z-index: 1;
+}
+
+.owl span {
+  background-color: #34e0a1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px 5px 5px;
+  width: 40px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-family: "TS-Med", sans-serif;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+} */
+
+.rating {
+  color: #21aa6c;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.rating span {
+  margin-left: 10px;
+  color: #333333;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* ------------------------------------- FOOTER ------------------------------------ */
+/* ---------------------------------------------------------------------------------------- */
+
+footer {
+  height: 156px;
+  background-color: #faf1ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+footer span {
+  font-weight: bold;
 }
 
 /* ---------------------------------------------------------------------------------------- */
